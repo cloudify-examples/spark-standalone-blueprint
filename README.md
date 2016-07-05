@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # spark-blueprint-standalone-mode
 
 Spark Blueprint Standalone Mode
@@ -49,4 +49,4 @@ cfy deployments delete -d <deployment_id>
 =======
 # cfy ssh
 # sudo yum install gcc python-devel -y
->>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
+
