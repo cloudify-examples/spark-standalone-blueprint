@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 image: 'image id goes here'
 flavor: 'flavor is goes here'
 agent_user: 'user name goes here. example: ubuntu'
-=======
-image: '6c3047c6-17b1-4aaf-a657-9229bb481e50'
-flavor: '9cf6e43b-e191-47ca-8665-f8592e2d6227'
-agent_user: 'ubuntu'
->>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
