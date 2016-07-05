@@ -4,6 +4,7 @@
 Spark Blueprint Standalone Mode
 
 It's main purpose is to deploy a standalone mode spark on Openstack.
+
 Step 1: Upload the blueprint
 
 cfy blueprints upload -b <choose_blueprint_id> -p <blueprint_filename>
@@ -17,6 +18,7 @@ After you filled the input file corresponding to your blueprint, run:
 
 cfy deployments create -b <blueprint_id> -d <choose_deployment_id> -i inputs/<inputs_filename>
 Step 4: Install
+before you start the deployment run the prep.sh on the manager using cfy ssh
 
 Once the deployment is created, we can start running workflows:
 
@@ -35,13 +37,12 @@ Step 5: Once the workflow execution is complete, we can start it by running:
 on the instance after ssh to it.
 
 Open a browser to see the application UI.
-http://instance-ip-address:4040
-
+http://instance-ip-address:4040 
 
 Now lets run the uninstall workflow. This will uninstall the application, as well as delete all related resources.
 
 cfy executions start -w uninstall -d <deployment_id>
-Step 7: Delete the deployment
+Step 6: Delete the deployment
 
 Its best to delete deployments we are no longer using, since they take up memory on the management machine. We do this by running:
 

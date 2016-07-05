@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+bin
+include
+lib
+share
+.gitignore
+.Python
+spark-blueprint.iml
+inputs/openstack-org.yaml
