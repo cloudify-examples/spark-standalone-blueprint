@@ -8,6 +8,7 @@ It's main purpose is to deploy a standalone mode spark on Openstack.
 Step 1: Upload the blueprint
 
 cfy blueprints upload -b <choose_blueprint_id> -p <blueprint_filename>
+
 Step 2: Create a deployment
 
 Every one of these blueprints have inputs, which can be populated for a deployment using input files.
@@ -17,6 +18,7 @@ Note that these files only contain the mandatory inputs, i.e, one's that the blu
 After you filled the input file corresponding to your blueprint, run:
 
 cfy deployments create -b <blueprint_id> -d <choose_deployment_id> -i inputs/<inputs_filename>
+
 Step 4: Install
 before you start the deployment run the prep.sh on the manager using cfy ssh
 
@@ -42,6 +44,7 @@ http://instance-ip-address:4040
 Now lets run the uninstall workflow. This will uninstall the application, as well as delete all related resources.
 
 cfy executions start -w uninstall -d <deployment_id>
+
 Step 6: Delete the deployment
 
 Its best to delete deployments we are no longer using, since they take up memory on the management machine. We do this by running:
