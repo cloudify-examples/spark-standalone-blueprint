@@ -46,7 +46,5 @@ Step 7: Delete the deployment
 Its best to delete deployments we are no longer using, since they take up memory on the management machine. We do this by running:
 
 cfy deployments delete -d <deployment_id>
-=======
-# cfy ssh
-# sudo yum install gcc python-devel -y
+
 
