@@ -12,6 +12,5 @@ ctx logger info "spark installed"
 
 # to start spark streaming in background:
 # nohup spark-submit <parameters> 2>&1 < /dev/null &
-=======
 /usr/local/spark/bin/spark-shell
->>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
+
