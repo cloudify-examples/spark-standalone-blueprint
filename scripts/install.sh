@@ -4,7 +4,6 @@ set -x -e
 
 TEMP_DIR="/tmp"
 
-<<<<<<< HEAD
 ctx logger info "Starting spark workflow"
 
 # adding hostname to /etc/hosts
@@ -31,22 +30,8 @@ function install_java_per_os {
         exit 1
     fi
 }
-=======
 
 ctx logger info "Starting spark workflow"
-
-#function yum_install {
-#    sudo yum install java-1.8.0-openjdk git -y
-#    ctx logger info "Installed OpenJDK"
-#}
-
-#function apt_install {
-    sudo add-apt-repository ppa:webupd8team/java -y
-    sudo apt-get update
-    sudo apt-get install default-jre default-jdk  git -y
-    ctx logger info "OpenJDK Installed"
-#}
->>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
 
 # setting up scala
 cd ${TEMP_DIR}
@@ -67,24 +52,17 @@ echo "export PATH=$SCALA_HOME/bin:$PATH" | tee -a ~/.bashrc
 # If you download the source code from Apache spark org, and build with command
 # sudo /usr/local/spark/sbt/sbt assembly
 
-<<<<<<< HEAD
 install_java_per_os
 
 ctx logger info "spark Installed"
 
-exit 0
-=======
-ctx logger info "spark Installed"
-
 # adding hostname to /etc/hosts
-
 
 ipaddr=$(hostname -I)
 host=$(hostname)
 echo "$ipaddr $host" >> /etc/hosts
 
-
 ctx logger info "hostname added"
 
 exit 0
->>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
+
