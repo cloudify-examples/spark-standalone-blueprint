@@ -84,4 +84,8 @@ outputs:
   http_endpoint:
     description: Web server external endpoint
     value: { concat: ['http://', { get_attribute: [virtual_ip, floating_ip_address] },
+<<<<<<< HEAD
                       ':', { get_property: [http_web_server, port] }] }
+=======
+                      ':', { get_property: [http_web_server, port] }] }
+>>>>>>> 7e9521c13d46bc8f3bcfa6552d422ee241a08648
