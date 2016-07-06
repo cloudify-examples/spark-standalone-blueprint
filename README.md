@@ -1,6 +1,6 @@
 
-# spark-blueprint-standalone-mode
-
+# Spark blueprint standalone-mode
+ 
 Spark Blueprint Standalone Mode
 
 It's main purpose is to deploy a standalone mode spark on Openstack.
