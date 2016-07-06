@@ -10,5 +10,4 @@ cd $SPARK_HOME
 
 # to start spark streaming in background:
 # nohup spark-submit <parameters> 2>&1 < /dev/null &
-/usr/local/spark/bin/spark-shell
 
