@@ -56,13 +56,5 @@ install_java_per_os
 
 ctx logger info "spark Installed"
 
-# adding hostname to /etc/hosts
-
-ipaddr=$(hostname -I)
-host=$(hostname)
-echo "$ipaddr $host" >> /etc/hosts
-
-ctx logger info "hostname added"
-
 exit 0
 

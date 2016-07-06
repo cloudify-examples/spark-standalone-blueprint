@@ -5,7 +5,6 @@ set -x -e
 source ~/.bashrc
 cd $SPARK_HOME
 
-ctx logger info "spark installed"
 # to start the spark-shell ssh to the instance and type at the shell:
 # /usr/local/spark/bin/spark-shell
 
