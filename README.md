@@ -1,3 +1,4 @@
+[![Build Status](https://circleci.com/gh/cloudify-examples/spark-standalone-blueprint.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/cloudify-examples/spark-standalone-blueprint)
 
 # Spark blueprint standalone-mode
  
